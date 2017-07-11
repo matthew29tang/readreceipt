@@ -1,1 +1,1 @@
-init
+Minimal Viable Product- Supports read receipts for channels, private channels, and IMs.
