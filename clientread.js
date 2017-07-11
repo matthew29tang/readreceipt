@@ -1,4 +1,4 @@
-var token='xoxp-44908038448-44917207937-210231381397-c638527b0b7c71581b8b33ae7b419992'
+var token='XXXX'
 var RtmClient = require('@slack/client').RtmClient;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
 var CLIENT_EVENTS = require('@slack/client').CLIENT_EVENTS;
