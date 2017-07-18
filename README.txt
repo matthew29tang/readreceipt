@@ -6,15 +6,18 @@ V0.1.0 (7/17/17)- Added a server for Esther. Bug-fixing in progress.
 
 tl;dr my code automatically reacts with your face as a read receipt if you allow me to. Currently active for Esther(beta testing) and Matthew. We are "online" 24/7 because the servers run 24/7 but will still receive notifications.
 
-FAQ:
+FAQ: (For Scioly slack)
 What is this? What does this do?
 This is basically an app that adds read receipts to slack. Read receipts are markers that indicate that you have read a message to let others know that you have seen it.
+
+Who made this?
+Me! Entirely from scratch as a side project :)
 
 How does this work?
 You do need to give me your API key to create a server for you. The code automatically reacts with your face (custom emoji) once you update your read marker. It will automatically removes the reaction of your face for previous messages above this. I set up a server using Heroku to run the code 24/7. You can check out the code in clientread.js!
 
 But isn't that dangerous to give out your API key?
-Yes! It is. But I'm a nice person and I won't exploit your account. I swear!! (It basically gives me permission to post messages and react to messages under your account.
+Yes! It is. But I'm a nice person and I won't exploit your account. I swear!! (It basically gives me permission to post messages and react to messages under your account- there's nothing I could gain from this).
 
 What is an API key?
 An API key is a token that allows me to authenticate using Oath to the slack Real Time Messaging (RTM) server. Basically it makes sure that random people can't just post for users.
