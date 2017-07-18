@@ -4,6 +4,7 @@ V0.0.0 (7/10/17)- Soft launch for just my own read receipts. Minimal Viable Prod
 
 V0.1.0 (7/17/17)- Added a server for Esther. Bug-fixing in progress.
 
+tl;dr my code automatically reacts with your face as a read receipt if you allow me to. Currently active for Esther(beta testing) and Matthew. We are "online" 24/7 because the servers run 24/7 but will still receive notifications.
 
 FAQ:
 What is this? What does this do?
