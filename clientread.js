@@ -1,3 +1,31 @@
+//Heroku gets mad if you don't set up a web port, so you gotta do this part. 
+var express = require('express');
+var app = express();
+
+app.set('port', (process.env.PORT || 5000));
+
+app.use(express.static(__dirname + '/public'));
+
+// views is directory for all template files
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+app.get('/', function(request, response) {
+  response.render('pages/index');
+});
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+
+//ping the server to prevent dyno idling
+var http = require("http");
+setInterval(function() {
+    http.get("SERVERNAMEHERE");
+}, 300000);
+
+//Everything below this is the scripts for read receipts
+
 var token='XXX'
 var RtmClient = require('@slack/client').RtmClient;
 var RTM_EVENTS = require('@slack/client').RTM_EVENTS;
